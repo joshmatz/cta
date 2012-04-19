@@ -1,0 +1,2 @@
+= Call to Arms =
+Browser based text strategy game written in PHP using CakePHP.
