@@ -1,0 +1,429 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://creativecommons.org/licenses/MIT/	*/
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 42px;
+	line-height: 48px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font: 12px/18px Arial, Verdana, sans-serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{color: #4e98ff; background: rgb(240,248,255);}
+::-moz-selection 	{background: rgb(240,248,255);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(240,248,255);}
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+	width: 896px;
+	margin: 0 auto;
+	padding: 10px 48px 84px;
+	background: rgb(232,232,232);
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+    display: block;
+    position: relative;
+}
+
+header, article, footer {
+margin: 0;
+width: 896px;
+position: relative;
+}
+
+
+header h1 {
+	font-size: 26px;
+}
+
+nav.account {
+	position: absolute;
+	top: -10px;
+	right: 0;
+	font-size: 11px; 
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+	background: transparent;
+	color: white;
+	
+}
+
+nav.account a {
+	color: #87caff;
+	text-decoration: none;
+}
+
+nav.account .account-bar {
+
+}
+
+nav.account .account-login {
+	border-bottom-left-radius: 3px;
+}
+
+nav.account .account-cell {
+	float: left;
+	list-style: none;
+	padding: 5px 15px 5px 15px ;
+	position: relative;
+	display: block;
+	border-right: 1px #888 solid;
+	background-image: -moz-linear-gradient(rgb(100,100,100),rgb(50,50,50));
+    background-image: -o-linear-gradient(rgb(100,100,100),rgb(50,50,50));
+    background-image: -webkit-linear-gradient(rgb(100,100,100),rgb(50,50,50));
+    background-image: linear-gradient(rgb(100,100,100),rgb(50,50,50));
+
+}
+
+nav.account .account-cell:hover {
+	background-image: -moz-linear-gradient(rgb(50,50,50),rgb(100,100,100));
+    background-image: -o-linear-gradient(rgb(50,50,50),rgb(100,100,100));
+    background-image: -webkit-linear-gradient(rgb(50,50,50),rgb(100,100,100));
+    background-image: linear-gradient(rgb(50,50,50),rgb(100,100,100));
+}
+
+nav.account .account-browse {
+	background-image: -moz-linear-gradient(rgb(135,202,255),rgb(65,84,125));
+    background-image: -o-linear-gradient(rgb(135,202,255),rgb(65,84,125));
+    background-image: -webkit-linear-gradient(rgb(135,202,255),rgb(65,84,125));
+    background-image: linear-gradient(rgb(135,202,255),rgb(65,84,125));
+	border-right: 0px;
+	border-bottom-right-radius: 3px;
+}
+
+nav.account .account-browse:hover {
+	background-image: -moz-linear-gradient(rgb(65,84,125),rgb(135,202,255));
+    background-image: -o-linear-gradient(rgb(65,84,125),rgb(135,202,255));
+    background-image: -webkit-linear-gradient(rgb(65,84,125),rgb(135,202,255));
+    background-image: linear-gradient(rgb(65,84,125),rgb(135,202,255));
+}
+
+nav.account .account-browse a {
+	color: #fff;
+}
+
+nav.account .account-link {
+	display:block;
+	text-transform: uppercase;
+}
+
+section#main {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+section#account-details {
+	float:left;
+	width: 50%;
+}
+
+img.facebook-account {
+	float: left;
+	margin-right: 15px; 
+}
+
+section#account-games {
+	float:left;
+	width: 50%;
+}
+
+
+form,input,select,textarea{margin:0; padding:0; color:#ffffff;}
+
+div.box {
+	margin:0 auto;
+	width:700px;
+	background:#222222;
+	position:relative;
+	top:50px;
+	border:1px solid #262626;
+}
+
+div.box h1 { 
+	color:#ffffff;
+	font-size:18px;
+	text-transform:uppercase;
+	padding:5px 0 5px 5px;
+	border-bottom:1px solid #161712;
+	border-top:1px solid #161712; 
+}
+
+div.box label {
+	width:100%;
+	display: block;
+	background:#1C1C1C;
+	border-top:1px solid #262626;
+	border-bottom:1px solid #161712;
+	padding:10px 0 10px 0;
+}
+
+div.box label span {
+	display: block;
+	color:#bbbbbb;
+	font-size:12px;
+	float:left;
+	width:100px;
+	text-align:right;
+	padding:5px 20px 0 0;
+}
+
+div.box .textBox {
+	padding:10px 10px;
+	width:200px;
+	background:#262626;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+}
+
+div.box .message{
+	padding:7px 7px;
+	width:350px;
+	background:#262626;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+	overflow:hidden;
+	height:150px;
+}
+
+div.box .submit
+{
+	margin:0 0 10px 0;
+	padding:4px 7px;
+	background:#CC0000;
+	border:0px;
+	position: relative;
+	top:10px;
+	left:382px;
+	width:120px;
+	border-bottom: 1px double #660000;
+	border-top: 1px double #660000;
+	border-left:1px double #FF0033;
+	border-right:1px double #FF0033;
+}
+
+div.box .dropDown {
+	padding:10px 10px;
+	width:200px;
+	background:#262626;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+}
+
+div.box .numberBox {
+	padding:10px 10px;
+	width:50px;
+	background:#262626;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+}
+
+div.box .checkbox {
+	width:40px;
+	height:40px;
+	background:#262626;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+}
+
+ul.topnav {  
+    list-style: none;  
+    padding: 0 20px;  
+    margin: 0;  
+    float: left;  
+    width: 920px;  
+    background: #222;  
+    font-size: 1.2em;  
+    background: url(topnav_bg.gif) repeat-x;  
+}  
+ul.topnav li {  
+    float: left;  
+    margin: 0;  
+    padding: 0 15px 0 0;  
+    position: relative; /*--Declare X and Y axis base for sub navigation--*/  
+}  
+ul.topnav li a{  
+    padding: 10px 5px;  
+    color: #fff;  
+    display: block;  
+    text-decoration: none;  
+    float: left;  
+}  
+ul.topnav li a:hover{  
+    background: url(topnav_hover.gif) no-repeat center top;  
+}  
+ul.topnav li span { /*--Drop down trigger styles--*/  
+    width: 17px;  
+    height: 35px;  
+    float: left;  
+    background: url(subnav_btn.gif) no-repeat center top;  
+}  
+ul.topnav li span.subhover {background-position: center bottombottom; cursor: pointer;} /*--Hover effect for trigger--*/  
+ul.topnav li ul.subnav {  
+    list-style: none;  
+    position: absolute; /*--Important - Keeps subnav from affecting main navigation flow--*/  
+    left: 0; top: 35px;  
+    background: #333;  
+    margin: 0; padding: 0;  
+    display: none;  
+    float: left;  
+    width: 170px;  
+    border: 1px solid #111;  
+}  
+ul.topnav li ul.subnav li{  
+    margin: 0; padding: 0;  
+    border-top: 1px solid #252525; /*--Create bevel effect--*/  
+    border-bottom: 1px solid #444; /*--Create bevel effect--*/  
+    clear: both;  
+    width: 170px;  
+}  
+html ul.topnav li ul.subnav li a {  
+    float: left;  
+    width: 145px;  
+    background: #333 url(dropdown_linkbg.gif) no-repeat 10px center;  
+    padding-left: 20px;  
+}  
+html ul.topnav li ul.subnav li a:hover { /*--Hover effect for subnav links--*/  
+    background: #222 url(dropdown_linkbg.gif) no-repeat 10px center;  
+}  
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	body {
+		width: 712px;
+		padding: 48px 28px 60px;
+		margin: 0 auto;
+	}
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	body {
+		width: 252px;
+		padding: 48px 34px 60px;
+		margin: 0 auto;
+	}
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	body {
+		width: 436px;
+		padding: 36px 22px 48px;
+		margin: 0 auto;
+	}
+	
+}

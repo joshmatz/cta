@@ -1,0 +1,1 @@
+Account activation failed. <?php echo $this->Html->link(__('Resend activation email?', true), array('controller' => 'accounts', 'action' => 'resendactivation')); ?>

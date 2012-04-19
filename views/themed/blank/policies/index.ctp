@@ -1,0 +1,1 @@
+<a href="/policies/privacy">Privacy Policy</a> | <a href="/policies/terms">Terms of Service</a> | <a href="/policies/contact">Contact Bojoto</a>

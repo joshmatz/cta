@@ -1,0 +1,63 @@
+<?php
+App::import('Lib', 'Facebook.FacebookInfo');
+class AppController extends Controller {
+	var $helpers = array('Session', 'Facebook.Facebook', 'Html', 'Form', 'Js');
+	var $components = array(
+		'Session', 
+		'Auth' => array(
+			'authorize' => 'controller', 
+			'loginError' => 'No, you fool!  You entered the wrong email or password!',
+			'authError' => 'Sorry, you are lacking access.',
+			'autoRedirect' => false,
+			'fields' => array('username' => 'email', 'password' => 'password'),
+			'userModel' => 'Account'
+		),
+		'Facebook.Connect',
+		'Cookie', 
+		'Email'
+	);
+	var $view = 'Theme';
+	var $theme = 'provokeone';
+	
+	function beforeFilter() {
+		$this->account = $this->Auth->user();
+		if(!empty($this->account)):
+			$this->Session->write('isLoggedIn', true);
+		endif;
+		$this->set('account', $this->account);
+		if($this->Connect->user()):
+			$this->set('facebook_user', $this->Connect->user());			
+		endif;
+	}
+	
+	function isAuthorized(){
+		
+		return $this->Auth->user('id');
+	}
+	
+	function beforeFacebookSave(){
+		$this->Connect->authUser['Account']['email'] = $this->Connect->user('email');
+		$this->Connect->authUser['Account']['active'] = 1;
+		return true; //Must return true or will not save.
+	}
+	
+	function beforeFacebookLogin($user) {
+		if($this->Connect->authUser['Account']['email'] == null || $this->Connect->authUser['Account']['password'] == null):
+			$this->Connect->authUser['Account']['email'] = $this->Connect->user('email');
+			$this->Connect->authUser['Account']['password'] = $this->Auth->password(FacebookInfo::randPass());
+			$this->Connect->authUser['Account']['active'] = 1;
+			$this->loadModel('Account');
+			$this->Account->save($this->Connect->authUser);
+		endif;
+
+
+		
+	}
+	
+	function beforeRender(){
+		if($this->name == 'CakeError') :
+        	$this->layout = 'error';
+        endif;
+    }
+}
+?>

@@ -1,0 +1,217 @@
+body {
+	background-color: black;
+	margin: 0 0 0 0;
+	color:white;
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+  	font-size:11px;
+}
+
+.main_container {
+	background-image:url('http://www.provokeone.com/ctagame/img/calltoarms.png');
+	background-color: black;
+	background-repeat:no-repeat;
+	padding-top: 290px;
+	margin: 0 0 0 0;
+	color:white;
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+  	font-size:11px;
+  	min-height: 760px;
+}
+
+.content_container {
+	color:white;
+	margin-top: 15px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom:0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: left ;
+	
+}
+
+table {
+	color: white;	
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+  	font-size:11px;
+}
+
+td {
+	color: white;
+}
+
+a {
+	color: #cad19a;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #cad19a;
+	text-decoration: underline;
+}
+
+.help {
+	text-align:center;
+	color:#bbbbbb;
+	font-size:12px;
+	padding:5px 0 0 0;
+}
+
+.guideNav {
+	text-align:center;
+	color:#bbbbbb;
+	font-size:12px;
+	padding:5px 0 0 0;
+}
+
+.guide {
+	
+}
+
+.guide table{
+	margin: 10px auto;
+	border: 1px solid #555555;
+}
+
+.guide h1{
+	color: white;
+}
+
+.important{
+	color: red;
+	font-weight: bold;
+	margin-right: 5px;
+}
+
+.guide th{
+	padding-left: 15px;
+	background-color: #555555;
+}
+
+.guide td{
+	padding-top:15px;
+	padding-left:15px;
+	padding-right:15px;
+	padding-bottom: 15px;
+	border: 1px solid #555555;
+}
+
+.guide ul {
+	list-style-type: square;
+	padding-left: 15px;
+}
+
+.guide b {
+	color: #AAAAAA;
+}
+
+.flash {
+	color: red;
+}
+
+form,input,select,textarea{margin:0; padding:0; color:#ffffff;}
+
+div.box {
+	margin:0 auto;
+	width:700px;
+	background:#222222;
+	position:relative;
+	top:50px;
+	border:1px solid #262626;
+}
+
+div.box h1 { 
+	color:#ffffff;
+	font-size:18px;
+	text-transform:uppercase;
+	padding:5px 0 5px 5px;
+	border-bottom:1px solid #161712;
+	border-top:1px solid #161712; 
+}
+
+div.box label {
+	width:100%;
+	display: block;
+	background:#1C1C1C;
+	border-top:1px solid #262626;
+	border-bottom:1px solid #161712;
+	padding:10px 0 10px 0;
+}
+
+div.box label span {
+	display: block;
+	color:#bbbbbb;
+	font-size:12px;
+	float:left;
+	width:100px;
+	text-align:right;
+	padding:5px 20px 0 0;
+}
+
+div.box .textBox {
+	padding:10px 10px;
+	width:200px;
+	background:#262626;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+}
+
+div.box .message{
+	padding:7px 7px;
+	width:350px;
+	background:#262626;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+	overflow:hidden;
+	height:150px;
+}
+
+div.box .submit
+{
+	margin:0 0 10px 0;
+	padding:4px 7px;
+	background:#CC0000;
+	border:0px;
+	position: relative;
+	top:10px;
+	left:382px;
+	width:120px;
+	border-bottom: 1px double #660000;
+	border-top: 1px double #660000;
+	border-left:1px double #FF0033;
+	border-right:1px double #FF0033;
+}
+
+div.box .dropDown {
+	padding:10px 10px;
+	width:200px;
+	background:#262626;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+}
+
+div.box .numberBox {
+	padding:10px 10px;
+	width:50px;
+	background:#262626;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+}
+
+div.box .checkbox {
+	width:40px;
+	height:40px;
+	background:#262626;
+	border-bottom: 1px double #171717;
+	border-top: 1px double #171717;
+	border-left:1px double #333333;
+	border-right:1px double #333333;
+}

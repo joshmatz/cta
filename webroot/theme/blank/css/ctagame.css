@@ -1,0 +1,555 @@
+.main_container {
+	background-image:url('http://www.provokeone.com/ctagame/img/background.jpg');
+	background-color: black;
+	background-repeat:no-repeat;
+	padding-top: 15px;
+	color:white;
+	width:760px;
+	height:1090px;
+}
+
+.premium {
+	margin-top: 15px;
+	color: red;
+	font-style: oblique;
+	text-decoration: blink;
+}
+
+.restart_container {
+	clear:left;
+	color:white;
+	padding-top: 80px;
+	margin-top: 80px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom:0px;
+	text-align: left;
+	overflow: auto;
+	width:575px;
+	height:690px;
+}
+
+.report {
+	background: #333333;
+	border-style:solid;
+	border-width:medium;
+	border-color:#222222;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+.reportBody {
+	text-indent: 15px;
+	text-align: left;
+}
+
+.date {
+	color: #AAAAAA;
+	text-transform: capitalize;
+	text-indent: 15px;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.separator {
+	height: 10px;
+	background: black;
+}
+
+.content_container {
+	clear:left;
+	color:white;
+	margin-top: 5px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom:0px;
+	text-align: center;
+	overflow: auto;
+	width:575px;
+	height:690px;
+}
+
+.content_container h3 {
+	color: #AAAAAA;
+}
+
+.instructions {
+	background: #333333;
+	margin: 0px 0px 25px 0px;
+	padding: 5px 5px 5px 5px;
+	text-align: left;
+	border-style:solid;
+	border-width:medium;
+	border-color:#222222;
+}
+
+.flash {
+	color: red;
+	
+}
+
+.logo {
+	margin-left: 15px;
+}
+
+.kingdomInfo {
+	float: left;
+	margin-left: 15px;
+}
+.kingdomInfo2 {
+	float: left;
+	margin-left: 5px;
+}
+
+.kingdomInfo2 b {
+	color: #AAAAAA;
+}
+
+.kingdomInfo b {
+	color: #AAAAAA;
+}
+
+.resources {
+	clear:left;
+	width: 700px;
+	height: 80px;
+	margin-top: 0px;
+	margin-left: 30px;
+	background-image:url('http://www.provokeone.com/ctagame/img/wood_plank.png');
+	background-repeat:no-repeat;
+	padding-top:20px;
+	padding-bottom:0px;
+	padding-right:0px;
+	padding-left:0px;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.resources img {
+	vertical-align:middle;
+}
+
+.resources b {
+	color: #AAAAAA;
+}
+
+/* Navbar */
+.navBar {
+	float: left;
+	margin-bottom: 25px;
+	
+}
+
+/* Navigation Home */
+.home	{
+	position:relative;
+	float: left;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-image: url('http://www.provokeone.com/ctagame/img/home_on.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 89px;
+	height: 33px;
+	margin: 10px 0px 0px 15px; 
+	padding: 0; 
+}
+.home a {
+	display:block;
+	font-size: 11px;
+	width: 89px;
+	height: 33px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: white; text-decoration: none; 
+}
+.home img {width: 100%; height: 100%; border: 0; }
+.home a:hover img{visibility:hidden}
+.home span {
+	position:absolute;
+	left:5px;
+	top:3px;
+	margin:0;
+	cursor: pointer;
+}
+
+/* Navigation Buildings */
+.buildings	{
+	position:relative;
+	float: left;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-image: url('http://www.provokeone.com/ctagame/img/building_on.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 130px;
+	height: 33px;
+	margin: 10px 0px 0px 15px; 
+	padding: 0; 
+}
+.buildings a {
+	display:block;
+	font-size: 11px;
+	width: 130px;
+	height: 33px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: white; text-decoration: none; 
+}
+.buildings img {width: 100%; height: 100%; border: 0; }
+.buildings a:hover img{visibility:hidden}
+.buildings span {
+	position:absolute;
+	left:5px;
+	top:3px;
+	margin:0;
+	cursor: pointer;
+}
+
+/* Navigation Population */
+.population	{
+	position:relative;
+	float: left;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-image: url('http://www.provokeone.com/ctagame/img/population_on.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 151px;
+	height: 33px;
+	margin: 10px 0px 0px 15px; 
+	padding: 0; 
+}
+.population a {
+	display:block;
+	font-size: 11px;
+	width: 151px;
+	height: 33px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: white; text-decoration: none; 
+}
+.population img {width: 100%; height: 100%; border: 0; }
+.population a:hover img{visibility:hidden}
+.population span {
+	position:absolute;
+	left:5px;
+	top:3px;
+	margin:0;
+	cursor: pointer;
+}
+
+/* Navigation Forge */
+.forge	{
+	position:relative;
+	float: left;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-image: url('http://www.provokeone.com/ctagame/img/forge_on.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 91px;
+	height: 33px;
+	margin: 10px 0px 0px 15px; 
+	padding: 0; 
+}
+.forge a {
+	display:block;
+	font-size: 11px;
+	width: 91px;
+	height: 33px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: white; text-decoration: none; 
+}
+.forge img {width: 100%; height: 100%; border: 0; }
+.forge a:hover img{visibility:hidden}
+.forge span {
+	position:absolute;
+	left:5px;
+	top:3px;
+	margin:0;
+	cursor: pointer;
+}
+
+/* Navigation Military */
+.military	{
+	position:relative;
+	clear:left;
+	float:left;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-image: url('http://www.provokeone.com/ctagame/img/military_on.png');
+	background-repeat: no-repeat;
+	display: block;
+	width:  116px;
+	height: 33px;
+	margin: 10px 0px 0px 15px; 
+	padding: 0;
+}
+.military a {
+	display:block;
+	font-size: 11px;
+	width:  116px;
+	height: 33px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: white; text-decoration: none; 
+}
+.military img {width: 100%; height: 100%; border: 0; }
+.military a:hover img{visibility:hidden}
+.military span {
+	position:absolute;
+	left:5px;
+	top:3px;
+	margin:0;
+	cursor: pointer;
+}
+
+
+
+/* Navigation Attack */
+.attack	{
+	position:relative;
+	float:left;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-image: url('http://www.provokeone.com/ctagame/img/attack_on.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 96px;
+	height: 33px;
+	margin: 10px 0px 0px 15px; 
+	padding: 0; 
+}
+.attack a {
+	display:block;
+	font-size: 11px;
+	width: 96px;
+	height: 33px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: white; text-decoration: none; 
+}
+.attack img {width: 100%; height: 100%; border: 0; }
+.attack a:hover img{visibility:hidden}
+.attack span {
+	position:absolute;
+	left:5px;
+	top:3px;
+	margin:0;
+	cursor: pointer;
+}
+
+
+
+/* Navigation Spells */
+.spell	{
+	position:relative;
+	float:left;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-image: url('http://www.provokeone.com/ctagame/img/spells_on.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 88px;
+	height: 33px;
+	margin: 10px 0px 0px 15px; 
+	padding: 0; 
+}
+.spell a {
+	display:block;
+	font-size: 11px;
+	width: 88px;
+	height: 33px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: white; text-decoration: none; 
+}
+.spell img {width: 100%; height: 100%; border: 0; }
+.spell a:hover img{visibility:hidden}
+.spell span {
+	position:absolute;
+	left:5px;
+	top:3px;
+	margin:0;
+	cursor: pointer;
+}
+
+
+
+/* Navigation Strategy */
+.strategy	{
+	position:relative;
+	float:left;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-image: url('http://www.provokeone.com/ctagame/img/strategy_on.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 121px;
+	height: 33px;
+	margin: 10px 0px 0px 15px; 
+	padding: 0; 
+}
+.strategy a {
+	display:block;
+	font-size: 11px;
+	width: 121px;
+	height: 33px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: white; text-decoration: none; 
+}
+.strategy img {width: 100%; height: 100%; border: 0; }
+.strategy a:hover img{visibility:hidden}
+.strategy span {
+	position:absolute;
+	left:5px;
+	top:3px;
+	margin:0;
+	cursor: pointer;
+}
+
+
+
+/* Navigation province */
+.province	{
+	position:relative;
+	clear:left;
+	float:left;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-image: url('http://www.provokeone.com/ctagame/img/province_on.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 130px;
+	height: 33px;
+	margin: 10px 0px 0px 15px; 
+	padding: 0; 
+}
+.province a {
+	display:block;
+	font-size: 11px;
+	width: 130px;
+	height: 33px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: white; text-decoration: none; 
+}
+.province img {width: 100%; height: 100%; border: 0; }
+.province a:hover img{visibility:hidden}
+.province span {
+	position:absolute;
+	left:5px;
+	top:3px;
+	margin:0;
+	cursor: pointer;
+}
+
+
+
+/* Navigation rankings */
+.rankings	{
+	position:relative;
+	float:left;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-image: url('http://www.provokeone.com/ctagame/img/rankings_on.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 130px;
+	height: 33px;
+	margin: 10px 0px 0px 15px; 
+	padding: 0; 
+}
+.rankings a {
+	display:block;
+	font-size: 11px;
+	width: 130px;
+	height: 33px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: white; text-decoration: none; 
+}
+.rankings img {width: 100%; height: 100%; border: 0; }
+.rankings a:hover img{visibility:hidden}
+.rankings span {
+	position:absolute;
+	left:5px;
+	top:3px;
+	margin:0;
+	cursor: pointer;
+}
+
+
+
+/* Navigation technology */
+.technology	{
+	position:relative;
+	float:left;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-image: url('http://www.provokeone.com/ctagame/img/technology_on.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 161px;
+	height: 33px;
+	margin: 10px 0px 0px 15px; 
+	padding: 0; 
+}
+.technology a {
+	display:block;
+	font-size: 11px;
+	width: 161px;
+	height: 33px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: white; text-decoration: none; 
+}
+.technology img {width: 100%; height: 100%; border: 0; }
+.technology a:hover img{visibility:hidden}
+.technology span {
+	position:absolute;
+	left:5px;
+	top:3px;
+	margin:0;
+	cursor: pointer;
+}
+
+/* Navigation mailbox */
+.mailbox	{
+	position:relative;
+	float:left;
+	font-family: arial, verdana, helvetica, sans-serif;
+	background-image: url('http://www.provokeone.com/ctagame/img/mailbox_on.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 112px;
+	height: 33px;
+	margin: 10px 0px 0px 15px; 
+	padding: 0; 
+}
+.mailbox a {
+	display:block;
+	font-size: 11px;
+	width: 112px;
+	height: 33px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: white; text-decoration: none; 
+}
+.mailbox img {width: 100%; height: 100%; border: 0; }
+.mailbox a:hover img{visibility:hidden}
+.mailbox span {
+	position:absolute;
+	left:5px;
+	top:3px;
+	margin:0;
+	cursor: pointer;
+}
+
+* html a:hover {visibility:visible}
+

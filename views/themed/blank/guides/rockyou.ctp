@@ -1,0 +1,1 @@
+<iframe src=http://www.offers.ads.rockyou.com/userGreeting.php?userId=<?php echo $endUserId . "-" . "2620" . "-" . strtolower(substr(md5($endUserId . 2620 . "201234dfb56242238867930c79c1702c"), 0, 10 ));?>&dob=<?php echo $birthday?>&sex=<?php echo $sex?> width="650px" height="1230px" frameborder="0" scrolling="no"></iframe>

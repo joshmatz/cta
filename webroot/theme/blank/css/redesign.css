@@ -1,0 +1,565 @@
+body {
+	margin:0;
+	background-color:black;
+	color:white;
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+  	font-size:11px;
+}
+
+.main_container {
+	background-image:url('http://www.provokeone.com/ctagame/img/layout/layout_top.png');
+	background-color: black;
+	background-repeat:no-repeat;
+	padding: 0;
+	color:white;
+	width:760px;
+	height: auto;
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+  	font-size:11px;
+  	margin: 0;
+  	min-height: 700px;
+  	position: relative;
+  	
+}
+
+.menu {
+	list-style-type: none;
+	background: #222;
+	margin: 0;
+	padding: 0;
+}
+
+.menu_item {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.menu_item a {
+	color: #cad19a;
+	text-decoration:none;
+	margin:5px 0 5px 20px;
+	display:block;
+	width:100%;
+}
+
+.menu_item a:hover {
+	color: #cad19a;
+	text-decoration: underline;
+}
+
+.submenu {
+	list-style-type: none; 
+	margin-bottom: 5px; 
+	padding: 0;
+}
+
+.submenu_item {
+	display:inline; 
+	margin-right:5px; 
+	margin-left: 5px; 
+	border-left: solid 1px gray; 
+	border-right: solid 1px gray;
+}
+
+.selected_item {
+	background: #444;
+	
+}
+
+.subselected {
+	background: #444;
+}
+
+
+.submenu_item a {
+	color: #cad19a;
+	text-decoration:none;
+}
+
+.submenu_item a:hover {
+	color: #cad19a;
+	text-decoration: underline;
+}
+
+
+img {
+	border: 0px;
+}
+
+table {
+	color: white;	
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+  	font-size:11px;
+}
+
+td {
+	color: white;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.privacy {
+	clear:right;
+	float:right;
+	margin-top: 5px;
+	margin-right: 15px;
+}
+
+.privacy a {
+	color: #cad19a;
+	text-decoration: none;
+}
+
+.privacy a:hover {
+	color: #cad19a;
+	text-decoration: underline;
+}
+
+#timer {
+	clear: right;
+	float: right;
+	color: white;
+	background: transparent;
+	font-size:.8em;
+}
+
+.resourceTimer {
+	font-size:1.2em;
+	color:red;
+}
+
+.premiumBox {
+	clear:right;
+	float:right;
+	margin-top:25px;
+	margin-bottom:0px;
+	margin-right: 5px;
+}
+
+.premiumDisplay {
+	font-size:3em;
+	margin-right:5px;
+}
+
+.premiumDisplay img {
+	vertical-align:middle;
+}
+
+.premiumDisplay a {
+	color: white;
+	text-decoration: none;
+}
+
+.premiumDisplay a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.resources {
+	clear:right;
+	width:auto;
+	height:45px;
+	margin-top: 0px;
+	margin-left: 1px;
+	margin-right: 1px;
+	background-image:url('http://www.provokeone.com/ctagame/img/layout/resource_bg.png');
+	background-repeat:repeat-x;
+	padding-top:2px;
+	padding-bottom:0px;
+	padding-right:0px;
+	padding-left:0px;
+	text-align: center;
+	vertical-align:middle;
+}
+
+.resources img {
+	vertical-align:middle;
+}
+
+.resources b {
+	color: #AAAAAA;
+}
+
+.land {
+	float:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align:left;
+	margin-left:15px;
+}
+
+.gold {
+	float:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align:left;
+	margin-left:15px;
+}
+
+.food {
+	float:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align:left;
+	margin-left:15px;
+}
+
+.iron {
+	float:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align:left;
+	margin-left:15px;
+}
+
+.wood {
+	float:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align:left;
+	margin-left:15px;
+}
+
+.energy {
+	float:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align:left;
+	margin-left:15px;
+}
+
+.castle {
+	float:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align:left;
+	margin-left:15px;
+}
+
+#timer {
+	float:left;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align:left;
+	margin-left:15px;
+}
+
+/* Navbar */
+.navBar {
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+
+.military {
+	margin-left: 2px;
+	margin-right: 2px;
+	float:left;
+	background-image:url('http://www.provokeone.com/ctagame/img/layout/military_button_bg.png');
+	background-repeat:repeat-x;
+	padding: 7px 7px 7px 7px;
+	border-style: dotted;
+	border-color: #6b0607;
+	border-width:1px;
+}
+
+.military:hover {
+	border-top-color:black;
+	border-right-color:black;
+}
+
+.military a {
+	color: white;
+	text-decoration: none;
+}
+
+.military a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.home {
+	margin-left: 2px;
+	margin-right: 2px;
+	float:left;
+	background-image:url('http://www.provokeone.com/ctagame/img/layout/home_button_bg.png');
+	background-repeat:repeat-x;
+	padding: 7px 7px 7px 7px;
+	border-style: dotted;
+	border-color: #34466d;
+	border-width:1px;
+}
+
+.home:hover {
+	border-top-color:black;
+	border-right-color:black;
+}
+
+.home a {
+	color: white;
+	text-decoration: none;
+}
+
+.home a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.province {
+	margin-left: 2px;
+	margin-right: 2px;
+	float:left;
+	background-image:url('http://www.provokeone.com/ctagame/img/layout/province_button_bg.png');
+	background-repeat:repeat-x;
+	padding: 7px 7px 7px 7px;
+	border-style: dotted;
+	border-color: #6d726d;
+	border-width:1px;
+}
+
+.province:hover {
+	border-top-color:black;
+	border-right-color:black;
+}
+
+.province a {
+	color: white;
+	text-decoration: none;
+}
+
+.province a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+.premium {
+	margin-top: 15px;
+	color: red;
+	font-style: oblique;
+}
+
+.content_container {
+	color:white;
+	/* float:left;  */
+	min-height: 450px;
+	margin-top: 5px;
+	margin-left: 15px; 
+	margin-bottom: 135px; 
+	margin-right: 1px;
+	overflow: visible;
+	width:585px; 
+	height:auto;
+	text-align:left;
+}
+
+.content_container a {
+	color: #cad19a;
+	text-decoration:none;
+}
+
+.content_container a:hover {
+	color: #cad19a;
+	text-decoration: underline;
+}
+
+.content_container h3 {
+	color: #AAAAAA;
+}
+
+.restart_container {
+	clear:left;
+	color:white;
+	padding-top: 80px;
+	margin-top: 80px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-bottom:0px;
+	text-align: left;
+	overflow: auto;
+	width:575px;
+	height:690px;
+}
+
+.report {
+	background: #333333;
+	border-style:solid;
+	border-width:medium;
+	border-color:#222222;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+
+.reportBody {
+	text-indent: 15px;
+	text-align: left;
+}
+
+.date {
+	color: #AAAAAA;
+	text-transform: capitalize;
+	text-indent: 15px;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.separator {
+	height: 10px;
+	background: black;
+}
+
+.instructions {
+	background: #333333;
+	margin: 0px 0px 25px 0px;
+	padding: 5px 5px 5px 5px;
+	text-align: left;
+	border-style:solid;
+	border-width:medium;
+	border-color:#222222;
+}
+
+h3 {
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+  	font-size:13px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+
+.flash {
+	color: red;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.logo {
+	margin-left: 15px;
+}
+
+.kingdomInfo {
+	float: left;
+	margin-left: 15px;
+}
+.kingdomInfo2 {
+	float: left;
+	margin-left: 5px;
+}
+
+.kingdomInfo2 b {
+	color: #AAAAAA;
+}
+
+.kingdomInfo b {
+	color: #AAAAAA;
+}
+
+* html a:hover {visibility:visible}
+
+#lightbox h2{
+	margin:0 0 1em 0;
+}
+#lightbox h3{
+	color:#FF713F;
+}
+#lightbox.done p{
+	color:#333;
+}
+
+.suggest_placeholder {
+	color: #777;
+}
+
+.suggest_found {
+	background: #e1e9f6;
+}
+
+.suggest_pretext {
+	color: #aaa;
+}
+
+.suggest_list {
+	background: transparent;
+	border: 1px solid #bdc7d8;
+	border-top: none;
+	font-size: 11px;
+	margin-top: -1px;
+	overflow: hidden;
+	position: absolute;
+	text-align: left;
+	z-index: 102;
+}
+
+.suggest_list .suggest_suggestion {
+	background: #fff;
+	border-top: 1px solid #ddd;
+	color: #000;
+	cursor: pointer;
+	padding: 3px;
+	opacity: 0.94;
+	width: 100%;
+}
+
+.suggest_list .suggest_suggestion em {
+	background: #d8dfea;
+	color: black;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.suggest_list .suggest_suggestion small {
+	color: #808080;
+	padding-left: 5px;
+}
+
+.suggest_list .suggest_selected {
+	background: #3b5998;
+	color: #fff;
+	opacity: 1;
+}
+
+.suggest_list .suggest_selected em {
+	background: #5670a6;
+	color: #fff;
+}
+
+
+.tips {
+	color: #cad19a;
+	text-decoration: none;
+}
+
+.tips:hover {
+	position: relative;
+}
+
+.tips span {
+	display: none;
+}
+
+.tips:hover span {
+	color: black;
+	display: block;
+   	position: absolute; top: 10px; left: 0;
+	/* formatting only styles */
+	width: 250px; text-align: left;
+   	padding: 5px; margin: 10px; z-index: 100;
+   	background: #f0f0f0; border: 1px dotted #c0c0c0;
+	opacity: 0.95;
+	/* end formatting */
+}
+
+.quote {
+	margin-left: 35px;
+	margin-right: 35px;
+	background: #222;
+	border: medium solid #111;
+	padding: 15px;
+}
